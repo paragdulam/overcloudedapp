@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		CC08B6DBFE03858DCCDB7BC5 /* Pods_Overclouded.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041CA3C695E6EADFEE9D045F /* Pods_Overclouded.framework */; };
 		F10B61C61D02C43500B0ED56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10B61C51D02C43500B0ED56 /* AppDelegate.swift */; };
-		F10B61C81D02C43500B0ED56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10B61C71D02C43500B0ED56 /* ViewController.swift */; };
 		F10B61CB1D02C43500B0ED56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F10B61C91D02C43500B0ED56 /* Main.storyboard */; };
 		F10B61CE1D02C43500B0ED56 /* Overclouded.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F10B61CC1D02C43500B0ED56 /* Overclouded.xcdatamodeld */; };
 		F10B61D01D02C43500B0ED56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F10B61CF1D02C43500B0ED56 /* Assets.xcassets */; };
 		F10B61D31D02C43500B0ED56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F10B61D11D02C43500B0ED56 /* LaunchScreen.storyboard */; };
 		F10B61DB1D02C55500B0ED56 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10B61DA1D02C55500B0ED56 /* AppManager.swift */; };
+		F1224FD81D4A1AB600B3ED64 /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1224FD71D4A1AB600B3ED64 /* AccountsViewController.swift */; };
+		F1224FDA1D4A1AD300B3ED64 /* FilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1224FD91D4A1AD300B3ED64 /* FilesViewController.swift */; };
+		F1224FDC1D4A1D8900B3ED64 /* CoreDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1224FDB1D4A1D8900B3ED64 /* CoreDataTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,13 +25,15 @@
 		83832C5EEBF0BEF231B85F99 /* Pods-Overclouded.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overclouded.release.xcconfig"; path = "Pods/Target Support Files/Pods-Overclouded/Pods-Overclouded.release.xcconfig"; sourceTree = "<group>"; };
 		F10B61C21D02C43500B0ED56 /* Overclouded.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Overclouded.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F10B61C51D02C43500B0ED56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F10B61C71D02C43500B0ED56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F10B61CA1D02C43500B0ED56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F10B61CD1D02C43500B0ED56 /* Overclouded.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Overclouded.xcdatamodel; sourceTree = "<group>"; };
 		F10B61CF1D02C43500B0ED56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F10B61D21D02C43500B0ED56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F10B61D41D02C43500B0ED56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F10B61DA1D02C55500B0ED56 /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		F1224FD71D4A1AB600B3ED64 /* AccountsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
+		F1224FD91D4A1AD300B3ED64 /* FilesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilesViewController.swift; sourceTree = "<group>"; };
+		F1224FDB1D4A1D8900B3ED64 /* CoreDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +87,10 @@
 			isa = PBXGroup;
 			children = (
 				F10B61C51D02C43500B0ED56 /* AppDelegate.swift */,
-				F10B61C71D02C43500B0ED56 /* ViewController.swift */,
 				F10B61DA1D02C55500B0ED56 /* AppManager.swift */,
+				F1224FD71D4A1AB600B3ED64 /* AccountsViewController.swift */,
+				F1224FD91D4A1AD300B3ED64 /* FilesViewController.swift */,
+				F1224FDB1D4A1D8900B3ED64 /* CoreDataTableViewController.swift */,
 				F10B61C91D02C43500B0ED56 /* Main.storyboard */,
 				F10B61CF1D02C43500B0ED56 /* Assets.xcassets */,
 				F10B61D11D02C43500B0ED56 /* LaunchScreen.storyboard */,
@@ -216,9 +222,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F10B61C81D02C43500B0ED56 /* ViewController.swift in Sources */,
 				F10B61C61D02C43500B0ED56 /* AppDelegate.swift in Sources */,
 				F10B61CE1D02C43500B0ED56 /* Overclouded.xcdatamodeld in Sources */,
+				F1224FDC1D4A1D8900B3ED64 /* CoreDataTableViewController.swift in Sources */,
+				F1224FD81D4A1AB600B3ED64 /* AccountsViewController.swift in Sources */,
+				F1224FDA1D4A1AD300B3ED64 /* FilesViewController.swift in Sources */,
 				F10B61DB1D02C55500B0ED56 /* AppManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

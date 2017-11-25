@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreData
-//import SwiftyDropbox
+import SwiftyDropbox
 
 
 class CoreDataTableViewController : UIViewController, UITableViewDataSource, UITableViewDelegate {

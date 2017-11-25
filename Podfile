@@ -6,4 +6,5 @@ target 'Overclouded' do
     pod 'MMDrawerController'
     pod 'MMDrawerController+Storyboard'
     pod 'SwiftyDropbox'
+    pod 'OneDriveSDK', '~> 1.3'
 end

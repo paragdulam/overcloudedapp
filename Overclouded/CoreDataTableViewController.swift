@@ -8,19 +8,19 @@
 
 import UIKit
 import CoreData
-import SwiftyDropbox
+//import SwiftyDropbox
 
 
 class CoreDataTableViewController : UIViewController, UITableViewDataSource, UITableViewDelegate {
-    var fetchedResultsController : NSFetchedResultsController!
+    var fetchedResultsController : NSFetchedResultsController<NSFetchRequestResult>!
     @IBOutlet var tableView : UITableView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.automaticallyAdjustsScrollViewInsets = false
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-        let fetchRequest = NSFetchRequest(entityName: entityName())
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entityName())
         fetchRequest.predicate = predicate()
         fetchRequest.sortDescriptors = sortDescriptors()
         fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: AppManager.context(), sectionNameKeyPath: nil, cacheName: nil)
@@ -48,7 +48,7 @@ class CoreDataTableViewController : UIViewController, UITableViewDataSource, UIT
     //MARK:UITableViewDataSource, UITableViewDelegate
 
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
 
         if let sections = fetchedResultsController.sections {
@@ -59,8 +59,8 @@ class CoreDataTableViewController : UIViewController, UITableViewDataSource, UIT
         return 1
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 //        let animal = fetchedResultsController.objectAtIndexPath(indexPath) as! Animal
         
         cell.textLabel?.text = "Dropbox"
@@ -78,8 +78,8 @@ class CoreDataTableViewController : UIViewController, UITableViewDataSource, UIT
         return nil
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        Dropbox.authorizeFromController(self)
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {
+//        Dropbox.authorizeFromController(self)
     }
     
 

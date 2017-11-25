@@ -14,7 +14,7 @@ import UIKit
 class AppManager : NSObject {
     
     class func context() -> NSManagedObjectContext! {
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
         return appDelegate.managedObjectContext
     }
     

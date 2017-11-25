@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CC08B6DBFE03858DCCDB7BC5 /* Pods_Overclouded.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041CA3C695E6EADFEE9D045F /* Pods_Overclouded.framework */; };
+		4E868412AC3DE109AF72FCEA /* Pods_Overclouded.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6D31D6C1785E361F8B5882 /* Pods_Overclouded.framework */; };
 		F10B61C61D02C43500B0ED56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10B61C51D02C43500B0ED56 /* AppDelegate.swift */; };
 		F10B61CB1D02C43500B0ED56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F10B61C91D02C43500B0ED56 /* Main.storyboard */; };
 		F10B61CE1D02C43500B0ED56 /* Overclouded.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F10B61CC1D02C43500B0ED56 /* Overclouded.xcdatamodeld */; };
@@ -20,9 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		041CA3C695E6EADFEE9D045F /* Pods_Overclouded.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Overclouded.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		71EA64AEB5A16840FE75CF6C /* Pods-Overclouded.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overclouded.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Overclouded/Pods-Overclouded.debug.xcconfig"; sourceTree = "<group>"; };
-		83832C5EEBF0BEF231B85F99 /* Pods-Overclouded.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overclouded.release.xcconfig"; path = "Pods/Target Support Files/Pods-Overclouded/Pods-Overclouded.release.xcconfig"; sourceTree = "<group>"; };
+		6F7594088D5514C78998DEDC /* Pods-Overclouded.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overclouded.release.xcconfig"; path = "Pods/Target Support Files/Pods-Overclouded/Pods-Overclouded.release.xcconfig"; sourceTree = "<group>"; };
+		AE6D31D6C1785E361F8B5882 /* Pods_Overclouded.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Overclouded.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED5E18AA2410CAF02E684A81 /* Pods-Overclouded.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overclouded.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Overclouded/Pods-Overclouded.debug.xcconfig"; sourceTree = "<group>"; };
 		F10B61C21D02C43500B0ED56 /* Overclouded.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Overclouded.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F10B61C51D02C43500B0ED56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F10B61CA1D02C43500B0ED56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -41,28 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC08B6DBFE03858DCCDB7BC5 /* Pods_Overclouded.framework in Frameworks */,
+				4E868412AC3DE109AF72FCEA /* Pods_Overclouded.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6EFAA75326839396F5E85540 /* Pods */ = {
+		E929167D670E266FB5A51AE6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				71EA64AEB5A16840FE75CF6C /* Pods-Overclouded.debug.xcconfig */,
-				83832C5EEBF0BEF231B85F99 /* Pods-Overclouded.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		9A481F9C4D709951C603A75B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				041CA3C695E6EADFEE9D045F /* Pods_Overclouded.framework */,
+				AE6D31D6C1785E361F8B5882 /* Pods_Overclouded.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9E33B11A1F25B02D3D6A407 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED5E18AA2410CAF02E684A81 /* Pods-Overclouded.debug.xcconfig */,
+				6F7594088D5514C78998DEDC /* Pods-Overclouded.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		F10B61B91D02C43500B0ED56 = {
@@ -70,8 +70,8 @@
 			children = (
 				F10B61C41D02C43500B0ED56 /* Overclouded */,
 				F10B61C31D02C43500B0ED56 /* Products */,
-				6EFAA75326839396F5E85540 /* Pods */,
-				9A481F9C4D709951C603A75B /* Frameworks */,
+				E9E33B11A1F25B02D3D6A407 /* Pods */,
+				E929167D670E266FB5A51AE6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,12 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F10B61D71D02C43500B0ED56 /* Build configuration list for PBXNativeTarget "Overclouded" */;
 			buildPhases = (
-				43829F21636649F7D7C410A0 /* Check Pods Manifest.lock */,
+				0B67065D66866D8C1EB298C8 /* [CP] Check Pods Manifest.lock */,
 				F10B61BE1D02C43500B0ED56 /* Sources */,
 				F10B61BF1D02C43500B0ED56 /* Frameworks */,
 				F10B61C01D02C43500B0ED56 /* Resources */,
-				4500E210E23426B34DF97915 /* Embed Pods Frameworks */,
-				58AD35B2CD7C653BB7FB62A7 /* Copy Pods Resources */,
+				79DC826FA9666548DCCE7A28 /* [CP] Embed Pods Frameworks */,
+				C3BDCC39D5E0E45AA1C04736 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,11 +130,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Parag Dulam";
 				TargetAttributes = {
 					F10B61C11D02C43500B0ED56 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0910;
 					};
 				};
 			};
@@ -170,29 +171,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		43829F21636649F7D7C410A0 /* Check Pods Manifest.lock */ = {
+		0B67065D66866D8C1EB298C8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		4500E210E23426B34DF97915 /* Embed Pods Frameworks */ = {
+		79DC826FA9666548DCCE7A28 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,14 +201,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Overclouded/Pods-Overclouded-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		58AD35B2CD7C653BB7FB62A7 /* Copy Pods Resources */ = {
+		C3BDCC39D5E0E45AA1C04736 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,13 +263,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -307,13 +316,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -332,13 +349,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		F10B61D81D02C43500B0ED56 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71EA64AEB5A16840FE75CF6C /* Pods-Overclouded.debug.xcconfig */;
+			baseConfigurationReference = ED5E18AA2410CAF02E684A81 /* Pods-Overclouded.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Overclouded/Info.plist;
@@ -346,12 +364,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.parag.Overclouded;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		F10B61D91D02C43500B0ED56 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83832C5EEBF0BEF231B85F99 /* Pods-Overclouded.release.xcconfig */;
+			baseConfigurationReference = 6F7594088D5514C78998DEDC /* Pods-Overclouded.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Overclouded/Info.plist;
@@ -359,6 +379,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.parag.Overclouded;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

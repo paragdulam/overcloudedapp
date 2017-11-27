@@ -14,7 +14,6 @@ import SwiftyDropbox
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    //test commit
     var window: UIWindow?
     var drawerController: MMDrawerController?
 

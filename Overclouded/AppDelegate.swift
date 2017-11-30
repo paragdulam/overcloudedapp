@@ -14,34 +14,27 @@ import SwiftyDropbox
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+<<<<<<< HEAD
     var window: UIWindow?
+=======
+    //test commit
+    var window: UIWindow!
+>>>>>>> 52052c8cde2f609cf2b3bacfa13609a5801f7f51
     var drawerController: MMDrawerController?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
         
         DropboxClientsManager.setupWithAppKey("y1hmeaarl6da494")
-  let mainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-    //    var drawerController = window?.rootViewController as! MMDrawerController
         
-        
-      
-        let centerVC = mainStoryBoard.instantiateViewController(withIdentifier: "Center") as! CenterViewController
-        
-        let leftVCs = mainStoryBoard.instantiateViewController(withIdentifier: "left") as! AccountsViewController
-        
-        let leftSideNav =  UINavigationController(rootViewController: leftVCs)
-        
-        let centerSideNav = UINavigationController(rootViewController: centerVC)
-        
-        drawerController = MMDrawerController(center: centerSideNav, leftDrawerViewController: leftSideNav)
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        drawerController = storyboard.instantiateInitialViewController() as? MMDrawerController
         drawerController?.maximumLeftDrawerWidth = 280
         drawerController?.openDrawerGestureModeMask = .panningCenterView
         drawerController?.closeDrawerGestureModeMask = .tapCenterView
-        window!.rootViewController = drawerController
-        window!.makeKeyAndVisible()
-        
-        
+        window.rootViewController = drawerController
+        window.makeKeyAndVisible()
         
         return true
     }
@@ -52,6 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             switch authResult {
             case .success:
                 print("Success! User is logged into Dropbox.")
+                NotificationCenter.default.post(name: Notification.Name(rawValue: "DropBoxLoginSuccess"), object: nil)
             case .cancel:
                 print("Authorization flow was manually canceled by user!")
             case .error(_, let description):

@@ -12,7 +12,7 @@ import SwiftyDropbox
 import MMDrawerController
 
 
-class CoreDataTableViewController : UIViewController, UITableViewDataSource, UITableViewDelegate {
+class CoreDataTableViewController : UIViewController, UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate {
     var fetchedResultsController : NSFetchedResultsController<NSFetchRequestResult>!
     @IBOutlet var tableView : UITableView!
     
@@ -25,6 +25,7 @@ class CoreDataTableViewController : UIViewController, UITableViewDataSource, UIT
         fetchRequest.predicate = predicate()
         fetchRequest.sortDescriptors = sortDescriptors()
         fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: AppManager.context(), sectionNameKeyPath: nil, cacheName: nil)
+        fetchedResultsController.delegate = self
         do {
             try fetchedResultsController.performFetch()
         } catch {
@@ -44,27 +45,36 @@ class CoreDataTableViewController : UIViewController, UITableViewDataSource, UIT
     func sortDescriptors() -> [NSSortDescriptor] {
         return [NSSortDescriptor(key: "name", ascending: true)]
     }
+    
+    func textLabelText(_ indexPath: IndexPath) -> String? {
+        return nil
+    }
+
+    
+    
+    //MARK:NSFetchedResultsControllerDelegate
+
+    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        tableView.reloadData()
+    }
 
     
     //MARK:UITableViewDataSource, UITableViewDelegate
 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-
         if let sections = fetchedResultsController.sections {
             let currentSection = sections[section]
             return currentSection.numberOfObjects
         }
-        
-        return 1
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 //        let animal = fetchedResultsController.objectAtIndexPath(indexPath) as! Animal
         
-        cell.textLabel?.text = "Dropbox"
+        cell.textLabel?.text = textLabelText(indexPath)
 //        cell.detailTextLabel?.text = animal.habitat
         
         return cell
@@ -77,16 +87,6 @@ class CoreDataTableViewController : UIViewController, UITableViewDataSource, UIT
         }
         
         return nil
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        Dropbox.authorizeFromController(self)
-        DropboxClientsManager.authorizeFromController(UIApplication.shared,
-                                                      controller: self,
-                                                      openURL: { (url: URL) -> Void in
-                                                        UIApplication.shared.openURL(url)
-                                                        
-        })
     }
     
 

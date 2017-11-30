@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		189C1EE71FCB14E700F3C9A7 /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C1EE61FCB14E700F3C9A7 /* CenterViewController.swift */; };
 		4E868412AC3DE109AF72FCEA /* Pods_Overclouded.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6D31D6C1785E361F8B5882 /* Pods_Overclouded.framework */; };
 		F10B61C61D02C43500B0ED56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10B61C51D02C43500B0ED56 /* AppDelegate.swift */; };
 		F10B61CB1D02C43500B0ED56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F10B61C91D02C43500B0ED56 /* Main.storyboard */; };
@@ -18,10 +17,14 @@
 		F1224FD81D4A1AB600B3ED64 /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1224FD71D4A1AB600B3ED64 /* AccountsViewController.swift */; };
 		F1224FDA1D4A1AD300B3ED64 /* FilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1224FD91D4A1AD300B3ED64 /* FilesViewController.swift */; };
 		F1224FDC1D4A1D8900B3ED64 /* CoreDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1224FDB1D4A1D8900B3ED64 /* CoreDataTableViewController.swift */; };
+		F1B000331FD04E8900E8072D /* CloudsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B000321FD04E8900E8072D /* CloudsViewController.swift */; };
+		F1B000381FD0560900E8072D /* Account+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B000341FD0560900E8072D /* Account+CoreDataProperties.swift */; };
+		F1B000391FD0560900E8072D /* OCFile+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B000351FD0560900E8072D /* OCFile+CoreDataProperties.swift */; };
+		F1B0003A1FD0560900E8072D /* Account+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B000361FD0560900E8072D /* Account+CoreDataClass.swift */; };
+		F1B0003B1FD0560900E8072D /* OCFile+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B000371FD0560900E8072D /* OCFile+CoreDataClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		189C1EE61FCB14E700F3C9A7 /* CenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterViewController.swift; sourceTree = "<group>"; };
 		6F7594088D5514C78998DEDC /* Pods-Overclouded.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overclouded.release.xcconfig"; path = "Pods/Target Support Files/Pods-Overclouded/Pods-Overclouded.release.xcconfig"; sourceTree = "<group>"; };
 		AE6D31D6C1785E361F8B5882 /* Pods_Overclouded.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Overclouded.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED5E18AA2410CAF02E684A81 /* Pods-Overclouded.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overclouded.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Overclouded/Pods-Overclouded.debug.xcconfig"; sourceTree = "<group>"; };
@@ -36,6 +39,11 @@
 		F1224FD71D4A1AB600B3ED64 /* AccountsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
 		F1224FD91D4A1AD300B3ED64 /* FilesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilesViewController.swift; sourceTree = "<group>"; };
 		F1224FDB1D4A1D8900B3ED64 /* CoreDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataTableViewController.swift; sourceTree = "<group>"; };
+		F1B000321FD04E8900E8072D /* CloudsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudsViewController.swift; sourceTree = "<group>"; };
+		F1B000341FD0560900E8072D /* Account+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F1B000351FD0560900E8072D /* OCFile+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OCFile+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F1B000361FD0560900E8072D /* Account+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F1B000371FD0560900E8072D /* OCFile+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OCFile+CoreDataClass.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +106,11 @@
 				F10B61D11D02C43500B0ED56 /* LaunchScreen.storyboard */,
 				F10B61D41D02C43500B0ED56 /* Info.plist */,
 				F10B61CC1D02C43500B0ED56 /* Overclouded.xcdatamodeld */,
-				189C1EE61FCB14E700F3C9A7 /* CenterViewController.swift */,
+				F1B000321FD04E8900E8072D /* CloudsViewController.swift */,
+				F1B000361FD0560900E8072D /* Account+CoreDataClass.swift */,
+				F1B000341FD0560900E8072D /* Account+CoreDataProperties.swift */,
+				F1B000371FD0560900E8072D /* OCFile+CoreDataClass.swift */,
+				F1B000351FD0560900E8072D /* OCFile+CoreDataProperties.swift */,
 			);
 			path = Overclouded;
 			sourceTree = "<group>";
@@ -138,6 +150,7 @@
 				TargetAttributes = {
 					F10B61C11D02C43500B0ED56 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = D45RMSWB3F;
 						LastSwiftMigration = 0910;
 					};
 				};
@@ -227,11 +240,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F10B61C61D02C43500B0ED56 /* AppDelegate.swift in Sources */,
+				F1B0003A1FD0560900E8072D /* Account+CoreDataClass.swift in Sources */,
+				F1B000391FD0560900E8072D /* OCFile+CoreDataProperties.swift in Sources */,
 				F10B61CE1D02C43500B0ED56 /* Overclouded.xcdatamodeld in Sources */,
 				F1224FDC1D4A1D8900B3ED64 /* CoreDataTableViewController.swift in Sources */,
-				189C1EE71FCB14E700F3C9A7 /* CenterViewController.swift in Sources */,
+				F1B000331FD04E8900E8072D /* CloudsViewController.swift in Sources */,
 				F1224FD81D4A1AB600B3ED64 /* AccountsViewController.swift in Sources */,
+				F1B0003B1FD0560900E8072D /* OCFile+CoreDataClass.swift in Sources */,
 				F1224FDA1D4A1AD300B3ED64 /* FilesViewController.swift in Sources */,
+				F1B000381FD0560900E8072D /* Account+CoreDataProperties.swift in Sources */,
 				F10B61DB1D02C55500B0ED56 /* AppManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,6 +380,7 @@
 			baseConfigurationReference = ED5E18AA2410CAF02E684A81 /* Pods-Overclouded.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D45RMSWB3F;
 				INFOPLIST_FILE = Overclouded/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -378,6 +396,7 @@
 			baseConfigurationReference = 6F7594088D5514C78998DEDC /* Pods-Overclouded.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D45RMSWB3F;
 				INFOPLIST_FILE = Overclouded/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -8,23 +8,41 @@
 
 import UIKit
 import MMDrawerController
+import SwiftyDropbox
+import CoreData
 
 class AccountsViewController : CoreDataTableViewController {
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(getDropboxAccount), name: NSNotification.Name(rawValue: "DropBoxLoginSuccess"), object: nil)
+    }
+    
+    @objc func getDropboxAccount() {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let client = DropboxClientsManager.authorizedClient
+        client?.users.getCurrentAccount().response(completionHandler: { (account, error) in
+            let newAccount = NSEntityDescription.insertNewObject(forEntityName: "Account", into: appDelegate.managedObjectContext) as! Account
+            newAccount.email = account?.email
+            newAccount.name = account?.name.givenName
+            appDelegate.saveContext()
+        })
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+
     override func entityName() -> String! {
         return "Account"
     }
-    @IBAction func addAccountButtonTapped(_ sender: Any) {
-        
-         let mainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let centerVC = mainStoryBoard.instantiateViewController(withIdentifier: "FileDetails") as! FilesViewController
-        
-         let centerSideNav = UINavigationController(rootViewController: centerVC)
-        
-        let appDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
-        
-        appDelegate.drawerController!.centerViewController=centerSideNav
-        appDelegate.drawerController!.toggle(MMDrawerSide.left, animated: true, completion: nil)
-        
+    
+    override func textLabelText(_ indexPath: IndexPath) -> String? {
+        if let account = fetchedResultsController.object(at: indexPath) as? Account {
+            return account.name
+        }
+        return nil
     }
     
     override func predicate() -> NSPredicate? {

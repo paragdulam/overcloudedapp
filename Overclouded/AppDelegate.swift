@@ -14,12 +14,7 @@ import SwiftyDropbox
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-<<<<<<< HEAD
     var window: UIWindow?
-=======
-    //test commit
-    var window: UIWindow!
->>>>>>> 52052c8cde2f609cf2b3bacfa13609a5801f7f51
     var drawerController: MMDrawerController?
 
 
@@ -33,8 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         drawerController?.maximumLeftDrawerWidth = 280
         drawerController?.openDrawerGestureModeMask = .panningCenterView
         drawerController?.closeDrawerGestureModeMask = .tapCenterView
-        window.rootViewController = drawerController
-        window.makeKeyAndVisible()
+        window?.rootViewController = drawerController
+        window?.makeKeyAndVisible()
         
         return true
     }

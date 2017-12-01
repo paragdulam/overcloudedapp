@@ -13,15 +13,19 @@
 		F10B61CE1D02C43500B0ED56 /* Overclouded.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F10B61CC1D02C43500B0ED56 /* Overclouded.xcdatamodeld */; };
 		F10B61D01D02C43500B0ED56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F10B61CF1D02C43500B0ED56 /* Assets.xcassets */; };
 		F10B61D31D02C43500B0ED56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F10B61D11D02C43500B0ED56 /* LaunchScreen.storyboard */; };
-		F10B61DB1D02C55500B0ED56 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10B61DA1D02C55500B0ED56 /* AppManager.swift */; };
-		F1224FD81D4A1AB600B3ED64 /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1224FD71D4A1AB600B3ED64 /* AccountsViewController.swift */; };
-		F1224FDA1D4A1AD300B3ED64 /* FilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1224FD91D4A1AD300B3ED64 /* FilesViewController.swift */; };
-		F1224FDC1D4A1D8900B3ED64 /* CoreDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1224FDB1D4A1D8900B3ED64 /* CoreDataTableViewController.swift */; };
-		F1B000331FD04E8900E8072D /* CloudsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B000321FD04E8900E8072D /* CloudsViewController.swift */; };
-		F1B000381FD0560900E8072D /* Account+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B000341FD0560900E8072D /* Account+CoreDataProperties.swift */; };
-		F1B000391FD0560900E8072D /* OCFile+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B000351FD0560900E8072D /* OCFile+CoreDataProperties.swift */; };
-		F1B0003A1FD0560900E8072D /* Account+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B000361FD0560900E8072D /* Account+CoreDataClass.swift */; };
-		F1B0003B1FD0560900E8072D /* OCFile+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B000371FD0560900E8072D /* OCFile+CoreDataClass.swift */; };
+		F1D7918F1FD1EDD70053132F /* Account+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D7918B1FD1EDD70053132F /* Account+CoreDataClass.swift */; };
+		F1D791901FD1EDD70053132F /* Account+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D7918C1FD1EDD70053132F /* Account+CoreDataProperties.swift */; };
+		F1D791911FD1EDD70053132F /* OCFile+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D7918D1FD1EDD70053132F /* OCFile+CoreDataClass.swift */; };
+		F1D791921FD1EDD70053132F /* OCFile+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D7918E1FD1EDD70053132F /* OCFile+CoreDataProperties.swift */; };
+		F1D791981FD1EE250053132F /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D791941FD1EE250053132F /* AccountsViewController.swift */; };
+		F1D791991FD1EE250053132F /* CloudsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D791951FD1EE250053132F /* CloudsViewController.swift */; };
+		F1D7919A1FD1EE250053132F /* CoreDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D791961FD1EE250053132F /* CoreDataTableViewController.swift */; };
+		F1D7919B1FD1EE250053132F /* FilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D791971FD1EE250053132F /* FilesViewController.swift */; };
+		F1D7919D1FD1EE980053132F /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D7919C1FD1EE970053132F /* Account.swift */; };
+		F1D7919F1FD1EEB00053132F /* OCFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D7919E1FD1EEB00053132F /* OCFile.swift */; };
+		F1D791A21FD1EFFB0053132F /* BaseEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D791A01FD1EFFB0053132F /* BaseEntity+CoreDataClass.swift */; };
+		F1D791A31FD1EFFB0053132F /* BaseEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D791A11FD1EFFB0053132F /* BaseEntity+CoreDataProperties.swift */; };
+		F1D791A51FD1F0090053132F /* BaseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D791A41FD1F0090053132F /* BaseEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,15 +39,19 @@
 		F10B61CF1D02C43500B0ED56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F10B61D21D02C43500B0ED56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F10B61D41D02C43500B0ED56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F10B61DA1D02C55500B0ED56 /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
-		F1224FD71D4A1AB600B3ED64 /* AccountsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
-		F1224FD91D4A1AD300B3ED64 /* FilesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilesViewController.swift; sourceTree = "<group>"; };
-		F1224FDB1D4A1D8900B3ED64 /* CoreDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataTableViewController.swift; sourceTree = "<group>"; };
-		F1B000321FD04E8900E8072D /* CloudsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudsViewController.swift; sourceTree = "<group>"; };
-		F1B000341FD0560900E8072D /* Account+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		F1B000351FD0560900E8072D /* OCFile+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OCFile+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		F1B000361FD0560900E8072D /* Account+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataClass.swift"; sourceTree = "<group>"; };
-		F1B000371FD0560900E8072D /* OCFile+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OCFile+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F1D7918B1FD1EDD70053132F /* Account+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F1D7918C1FD1EDD70053132F /* Account+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F1D7918D1FD1EDD70053132F /* OCFile+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OCFile+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F1D7918E1FD1EDD70053132F /* OCFile+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OCFile+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F1D791941FD1EE250053132F /* AccountsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
+		F1D791951FD1EE250053132F /* CloudsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudsViewController.swift; sourceTree = "<group>"; };
+		F1D791961FD1EE250053132F /* CoreDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataTableViewController.swift; sourceTree = "<group>"; };
+		F1D791971FD1EE250053132F /* FilesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilesViewController.swift; sourceTree = "<group>"; };
+		F1D7919C1FD1EE970053132F /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		F1D7919E1FD1EEB00053132F /* OCFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCFile.swift; sourceTree = "<group>"; };
+		F1D791A01FD1EFFB0053132F /* BaseEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BaseEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F1D791A11FD1EFFB0053132F /* BaseEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BaseEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F1D791A41FD1F0090053132F /* BaseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,23 +104,43 @@
 		F10B61C41D02C43500B0ED56 /* Overclouded */ = {
 			isa = PBXGroup;
 			children = (
+				F1D791931FD1EE250053132F /* View Controllers */,
+				F1D7918A1FD1EDD70053132F /* Models */,
 				F10B61C51D02C43500B0ED56 /* AppDelegate.swift */,
-				F10B61DA1D02C55500B0ED56 /* AppManager.swift */,
-				F1224FD71D4A1AB600B3ED64 /* AccountsViewController.swift */,
-				F1224FD91D4A1AD300B3ED64 /* FilesViewController.swift */,
-				F1224FDB1D4A1D8900B3ED64 /* CoreDataTableViewController.swift */,
 				F10B61C91D02C43500B0ED56 /* Main.storyboard */,
 				F10B61CF1D02C43500B0ED56 /* Assets.xcassets */,
 				F10B61D11D02C43500B0ED56 /* LaunchScreen.storyboard */,
 				F10B61D41D02C43500B0ED56 /* Info.plist */,
 				F10B61CC1D02C43500B0ED56 /* Overclouded.xcdatamodeld */,
-				F1B000321FD04E8900E8072D /* CloudsViewController.swift */,
-				F1B000361FD0560900E8072D /* Account+CoreDataClass.swift */,
-				F1B000341FD0560900E8072D /* Account+CoreDataProperties.swift */,
-				F1B000371FD0560900E8072D /* OCFile+CoreDataClass.swift */,
-				F1B000351FD0560900E8072D /* OCFile+CoreDataProperties.swift */,
 			);
 			path = Overclouded;
+			sourceTree = "<group>";
+		};
+		F1D7918A1FD1EDD70053132F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F1D791A01FD1EFFB0053132F /* BaseEntity+CoreDataClass.swift */,
+				F1D791A11FD1EFFB0053132F /* BaseEntity+CoreDataProperties.swift */,
+				F1D7918B1FD1EDD70053132F /* Account+CoreDataClass.swift */,
+				F1D7918C1FD1EDD70053132F /* Account+CoreDataProperties.swift */,
+				F1D7919C1FD1EE970053132F /* Account.swift */,
+				F1D7918D1FD1EDD70053132F /* OCFile+CoreDataClass.swift */,
+				F1D7918E1FD1EDD70053132F /* OCFile+CoreDataProperties.swift */,
+				F1D7919E1FD1EEB00053132F /* OCFile.swift */,
+				F1D791A41FD1F0090053132F /* BaseEntity.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F1D791931FD1EE250053132F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F1D791941FD1EE250053132F /* AccountsViewController.swift */,
+				F1D791951FD1EE250053132F /* CloudsViewController.swift */,
+				F1D791961FD1EE250053132F /* CoreDataTableViewController.swift */,
+				F1D791971FD1EE250053132F /* FilesViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,16 +268,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				F10B61C61D02C43500B0ED56 /* AppDelegate.swift in Sources */,
-				F1B0003A1FD0560900E8072D /* Account+CoreDataClass.swift in Sources */,
-				F1B000391FD0560900E8072D /* OCFile+CoreDataProperties.swift in Sources */,
+				F1D791A51FD1F0090053132F /* BaseEntity.swift in Sources */,
+				F1D791A31FD1EFFB0053132F /* BaseEntity+CoreDataProperties.swift in Sources */,
+				F1D7919D1FD1EE980053132F /* Account.swift in Sources */,
 				F10B61CE1D02C43500B0ED56 /* Overclouded.xcdatamodeld in Sources */,
-				F1224FDC1D4A1D8900B3ED64 /* CoreDataTableViewController.swift in Sources */,
-				F1B000331FD04E8900E8072D /* CloudsViewController.swift in Sources */,
-				F1224FD81D4A1AB600B3ED64 /* AccountsViewController.swift in Sources */,
-				F1B0003B1FD0560900E8072D /* OCFile+CoreDataClass.swift in Sources */,
-				F1224FDA1D4A1AD300B3ED64 /* FilesViewController.swift in Sources */,
-				F1B000381FD0560900E8072D /* Account+CoreDataProperties.swift in Sources */,
-				F10B61DB1D02C55500B0ED56 /* AppManager.swift in Sources */,
+				F1D791991FD1EE250053132F /* CloudsViewController.swift in Sources */,
+				F1D791911FD1EDD70053132F /* OCFile+CoreDataClass.swift in Sources */,
+				F1D791921FD1EDD70053132F /* OCFile+CoreDataProperties.swift in Sources */,
+				F1D791901FD1EDD70053132F /* Account+CoreDataProperties.swift in Sources */,
+				F1D791A21FD1EFFB0053132F /* BaseEntity+CoreDataClass.swift in Sources */,
+				F1D791981FD1EE250053132F /* AccountsViewController.swift in Sources */,
+				F1D7919B1FD1EE250053132F /* FilesViewController.swift in Sources */,
+				F1D7919F1FD1EEB00053132F /* OCFile.swift in Sources */,
+				F1D7919A1FD1EE250053132F /* CoreDataTableViewController.swift in Sources */,
+				F1D7918F1FD1EDD70053132F /* Account+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

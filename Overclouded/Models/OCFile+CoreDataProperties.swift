@@ -16,7 +16,6 @@ extension OCFile {
         return NSFetchRequest<OCFile>(entityName: "OCFile")
     }
 
-    @NSManaged public var name: String?
     @NSManaged public var account: Account?
 
 }

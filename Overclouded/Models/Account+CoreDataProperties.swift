@@ -17,7 +17,6 @@ extension Account {
     }
 
     @NSManaged public var email: String?
-    @NSManaged public var name: String?
     @NSManaged public var files: NSSet?
 
 }

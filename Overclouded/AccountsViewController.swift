@@ -27,7 +27,26 @@ class AccountsViewController : CoreDataTableViewController {
             newAccount.email = account?.email
             newAccount.name = account?.name.givenName
             appDelegate.saveContext()
+            
+            client?.files.listFolder(path: "").response(completionHandler: { (files, error) in
+                for file in (files?.entries)! {
+                    print("\(file.name)")
+                    let newFile = NSEntityDescription.insertNewObject(forEntityName: "OCFile", into: appDelegate.managedObjectContext) as! OCFile
+                    newFile.name = file.name
+                    newFile.account = newAccount
+                    appDelegate.saveContext()
+                }
+            })
         })
+        
+        
+//        client?.files.getMetadata(path: "/").response(completionHandler: { (metadata, error) in
+//            let newFile = NSEntityDescription.insertNewObject(forEntityName: "OCFile", into: appDelegate.managedObjectContext) as! OCFile
+//            metadata.
+//            newFile.email = account?.email
+//            newFile.name = account?.name.givenName
+//            appDelegate.saveContext()
+//        })
     }
     
     deinit {

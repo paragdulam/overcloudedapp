@@ -18,4 +18,12 @@ class FilesViewController : CoreDataTableViewController {
         return nil
     }
     
+    override func textLabelText(_ indexPath: IndexPath) -> String? {
+        if let file = fetchedResultsController.object(at: indexPath) as? OCFile {
+            return file.name
+        }
+        return nil
+    }
+
+    
 }

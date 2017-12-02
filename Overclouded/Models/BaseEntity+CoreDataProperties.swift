@@ -16,6 +16,7 @@ extension BaseEntity {
         return NSFetchRequest<BaseEntity>(entityName: "BaseEntity")
     }
 
+    @NSManaged public var id: String?
     @NSManaged public var name: String?
 
 }

@@ -13,6 +13,8 @@
 		F10B61CE1D02C43500B0ED56 /* Overclouded.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F10B61CC1D02C43500B0ED56 /* Overclouded.xcdatamodeld */; };
 		F10B61D01D02C43500B0ED56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F10B61CF1D02C43500B0ED56 /* Assets.xcassets */; };
 		F10B61D31D02C43500B0ED56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F10B61D11D02C43500B0ED56 /* LaunchScreen.storyboard */; };
+		F18F38F01FD71F5D004244DD /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18F38EF1FD71F5D004244DD /* AccountTableViewCell.swift */; };
+		F18F38F21FD7205A004244DD /* FilesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18F38F11FD7205A004244DD /* FilesTableViewCell.swift */; };
 		F1D7918F1FD1EDD70053132F /* Account+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D7918B1FD1EDD70053132F /* Account+CoreDataClass.swift */; };
 		F1D791901FD1EDD70053132F /* Account+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D7918C1FD1EDD70053132F /* Account+CoreDataProperties.swift */; };
 		F1D791911FD1EDD70053132F /* OCFile+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D7918D1FD1EDD70053132F /* OCFile+CoreDataClass.swift */; };
@@ -39,6 +41,8 @@
 		F10B61CF1D02C43500B0ED56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F10B61D21D02C43500B0ED56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F10B61D41D02C43500B0ED56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F18F38EF1FD71F5D004244DD /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
+		F18F38F11FD7205A004244DD /* FilesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesTableViewCell.swift; sourceTree = "<group>"; };
 		F1D7918B1FD1EDD70053132F /* Account+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F1D7918C1FD1EDD70053132F /* Account+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F1D7918D1FD1EDD70053132F /* OCFile+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OCFile+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -104,6 +108,7 @@
 		F10B61C41D02C43500B0ED56 /* Overclouded */ = {
 			isa = PBXGroup;
 			children = (
+				F18F38EE1FD71F4C004244DD /* Cells */,
 				F1D791931FD1EE250053132F /* View Controllers */,
 				F1D7918A1FD1EDD70053132F /* Models */,
 				F10B61C51D02C43500B0ED56 /* AppDelegate.swift */,
@@ -114,6 +119,15 @@
 				F10B61CC1D02C43500B0ED56 /* Overclouded.xcdatamodeld */,
 			);
 			path = Overclouded;
+			sourceTree = "<group>";
+		};
+		F18F38EE1FD71F4C004244DD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F18F38EF1FD71F5D004244DD /* AccountTableViewCell.swift */,
+				F18F38F11FD7205A004244DD /* FilesTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		F1D7918A1FD1EDD70053132F /* Models */ = {
@@ -269,6 +283,7 @@
 			files = (
 				F10B61C61D02C43500B0ED56 /* AppDelegate.swift in Sources */,
 				F1D791A51FD1F0090053132F /* BaseEntity.swift in Sources */,
+				F18F38F21FD7205A004244DD /* FilesTableViewCell.swift in Sources */,
 				F1D791A31FD1EFFB0053132F /* BaseEntity+CoreDataProperties.swift in Sources */,
 				F1D7919D1FD1EE980053132F /* Account.swift in Sources */,
 				F10B61CE1D02C43500B0ED56 /* Overclouded.xcdatamodeld in Sources */,
@@ -276,6 +291,7 @@
 				F1D791911FD1EDD70053132F /* OCFile+CoreDataClass.swift in Sources */,
 				F1D791921FD1EDD70053132F /* OCFile+CoreDataProperties.swift in Sources */,
 				F1D791901FD1EDD70053132F /* Account+CoreDataProperties.swift in Sources */,
+				F18F38F01FD71F5D004244DD /* AccountTableViewCell.swift in Sources */,
 				F1D791A21FD1EFFB0053132F /* BaseEntity+CoreDataClass.swift in Sources */,
 				F1D791981FD1EE250053132F /* AccountsViewController.swift in Sources */,
 				F1D7919B1FD1EE250053132F /* FilesViewController.swift in Sources */,

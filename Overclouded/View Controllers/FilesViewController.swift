@@ -10,19 +10,28 @@ import UIKit
 
 class FilesViewController : CoreDataTableViewController {
     
-    override func entityName() -> String! {
+
+    override func entityName() -> String {
         return "OCFile"
     }
     
-    override func predicate() -> NSPredicate? {
-        return nil
+    override func cellReuseIdentifier() -> String {
+        return "FilesCell"
     }
     
-    override func textLabelText(_ indexPath: IndexPath) -> String? {
-        if let file = fetchedResultsController.object(at: indexPath) as? OCFile {
-            return file.name
-        }
-        return nil
+    override func sortDescriptorKey() -> String {
+        return "name"
+    }
+    
+    override func isAscending() -> Bool {
+        return false
+    }
+    
+    override func configureCell(cell: UITableViewCell, atIndexPath indexPath: IndexPath) -> UITableViewCell {
+        let file = fetchedResultsController.object(at: indexPath) as! OCFile
+        let aCell = cell as! FilesTableViewCell
+        aCell.textLabel?.text = file.name
+        return cell
     }
 
     

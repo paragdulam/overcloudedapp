@@ -43,18 +43,29 @@ class AccountsViewController : CoreDataTableViewController {
         NotificationCenter.default.removeObserver(self)
     }
 
-    override func entityName() -> String! {
+    override func entityName() -> String {
         return "Account"
     }
     
-    override func textLabelText(_ indexPath: IndexPath) -> String? {
-        if let account = fetchedResultsController.object(at: indexPath) as? Account {
-            return account.name
-        }
-        return nil
+    override func cellReuseIdentifier() -> String {
+        return "AccountCell"
     }
     
-    override func predicate() -> NSPredicate? {
-        return nil
+    override func sortDescriptorKey() -> String {
+        return "name"
     }
+    
+    override func isAscending() -> Bool {
+        return false
+    }
+    
+    override func configureCell(cell: UITableViewCell, atIndexPath indexPath: IndexPath) -> UITableViewCell {
+        let account = fetchedResultsController.object(at: indexPath) as! Account
+        let aCell = cell as! AccountTableViewCell
+        cell.accessoryType = .disclosureIndicator
+        aCell.textLabel?.text = account.email
+        return cell
+    }
+
+    
 }
